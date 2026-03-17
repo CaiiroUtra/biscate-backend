@@ -1,0 +1,203 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Maria Cumbe",
+      "email": "maria@biscate.co.mz",
+      "password": "123456",
+      "phone": "821000001",
+      "role": "CLIENT",
+      "verified": true,
+      "walletBalance": 12450,
+      "escrowBalance": 500,
+      "createdAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "2",
+      "name": "Fátima Sitoe",
+      "email": "fatima@biscate.co.mz",
+      "password": "123456",
+      "phone": "822000002",
+      "role": "FREELANCER",
+      "verified": true,
+      "walletBalance": 4800,
+      "escrowBalance": 400,
+      "ratingAvg": 4.8,
+      "ratingCount": 63,
+      "service": "Lavandaria ao domicílio",
+      "price": 500,
+      "priceUnit": "visita",
+      "category": "Lavandaria",
+      "bio": "Lavo, passo e entrego a roupa dobrada em casa do cliente.",
+      "availability": ["Seg","Ter","Qua","Qui","Sex","Sáb"],
+      "createdAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "3",
+      "name": "João Manuel",
+      "email": "joao@biscate.co.mz",
+      "password": "123456",
+      "phone": "823000003",
+      "role": "FREELANCER",
+      "verified": true,
+      "walletBalance": 8960,
+      "escrowBalance": 0,
+      "ratingAvg": 4.9,
+      "ratingCount": 47,
+      "service": "Programador Full-Stack",
+      "price": 2500,
+      "priceUnit": "hora",
+      "category": "TI",
+      "bio": "Programador com 5 anos de experiência em React, Node.js e Flutter.",
+      "availability": ["Seg","Ter","Qua","Qui","Sex"],
+      "createdAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "id": "4",
+      "name": "Carlos Machava",
+      "email": "carlos@biscate.co.mz",
+      "password": "123456",
+      "phone": "824000004",
+      "role": "FREELANCER",
+      "verified": true,
+      "walletBalance": 3200,
+      "escrowBalance": 0,
+      "ratingAvg": 5.0,
+      "ratingCount": 92,
+      "service": "Electricista",
+      "price": 800,
+      "priceUnit": "serviço",
+      "category": "Electricidade",
+      "bio": "Electricista certificado com 10 anos de experiência.",
+      "availability": ["Seg","Ter","Qua","Qui","Sex","Sáb"],
+      "createdAt": "2026-01-01T00:00:00Z"
+    }
+  ],
+  "portfolio": [
+    {
+      "id": "1",
+      "userId": "2",
+      "emoji": "👗",
+      "bg": "#E6F3FF",
+      "title": "Roupa social engomada",
+      "category": "Lavandaria",
+      "description": "Lavagem e engomadoria completa de fatos e camisas.",
+      "price": "MT 350",
+      "prazo": "1 dia",
+      "cliente": "Carlos M.",
+      "rating": 5
+    },
+    {
+      "id": "2",
+      "userId": "2",
+      "emoji": "🛏️",
+      "bg": "#E8F5E9",
+      "title": "Roupa de cama e toalhas",
+      "category": "Lavandaria",
+      "description": "Lavagem de lençóis, edredons e toalhas de banho.",
+      "price": "MT 500",
+      "prazo": "2 dias",
+      "cliente": "Hotel Polana",
+      "rating": 5
+    },
+    {
+      "id": "3",
+      "userId": "2",
+      "emoji": "👔",
+      "bg": "#FFF0F3",
+      "title": "Lavagem ao domicílio",
+      "category": "Lavandaria · Domicílio",
+      "description": "Recolha, lavagem, passa-ferro e entrega em casa.",
+      "price": "MT 500",
+      "prazo": "1 dia",
+      "cliente": "Família Cumbe",
+      "rating": 5
+    },
+    {
+      "id": "4",
+      "userId": "3",
+      "emoji": "🖥️",
+      "bg": "#E6F3FF",
+      "title": "Site de loja online",
+      "category": "TI · Web",
+      "description": "E-commerce completo com painel admin e M-Pesa.",
+      "price": "MT 3.200",
+      "prazo": "7 dias",
+      "cliente": "Maria Cumbe",
+      "rating": 5
+    },
+    {
+      "id": "5",
+      "userId": "3",
+      "emoji": "📱",
+      "bg": "#FFF0F3",
+      "title": "App mobile para restaurante",
+      "category": "TI · Mobile",
+      "description": "App Flutter para pedidos online.",
+      "price": "MT 5.500",
+      "prazo": "14 dias",
+      "cliente": "Empresa XYZ",
+      "rating": 5
+    }
+  ],
+  "contracts": [
+    {
+      "id": "1",
+      "clientId": "1",
+      "freelancerId": "2",
+      "title": "Lavagem ao domicílio",
+      "amount": 500,
+      "status": "ACTIVE",
+      "escrowLocked": true,
+      "autoReleaseAt": "2026-03-18T14:00:00Z",
+      "createdAt": "2026-03-16T14:00:00Z",
+      "description": "Tenho roupa de 1 semana para lavar e passar."
+    }
+  ],
+  "messages": [
+    {
+      "id": "1",
+      "contractId": "1",
+      "senderId": "2",
+      "content": "Olá! Posso ir amanhã às 8h. Fica no bairro da Sommerschield?",
+      "createdAt": "2026-03-16T14:30:00Z"
+    },
+    {
+      "id": "2",
+      "contractId": "1",
+      "senderId": "1",
+      "content": "Sim! Perfeito. Tenho roupa de 1 semana.",
+      "createdAt": "2026-03-16T14:32:00Z"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "1",
+      "contractId": "1",
+      "reviewerId": "1",
+      "reviewedId": "2",
+      "rating": 5,
+      "comment": "Excelente serviço! Roupa impecável e entregue no prazo.",
+      "tags": ["Pontual","Profissional","Qualidade"],
+      "createdAt": "2026-03-10T00:00:00Z"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "1",
+      "userId": "1",
+      "type": "ESCROW_LOCK",
+      "amount": -500,
+      "description": "Escrow — Fátima Sitoe",
+      "createdAt": "2026-03-16T14:00:00Z"
+    },
+    {
+      "id": "2",
+      "userId": "1",
+      "type": "DEPOSIT",
+      "amount": 5000,
+      "description": "Depósito via M-Pesa",
+      "createdAt": "2026-03-15T09:15:00Z"
+    }
+  ]
+}
